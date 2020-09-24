@@ -6,40 +6,35 @@
 # Fixed and made better by @anubisxx
 """ Userbot module containing various scrapers. """
 import os
-import shutil
-from bs4 import BeautifulSoup
-import re
 import random
-from time import sleep
+import re
+import shutil
+from datetime import datetime
 from html import unescape
 from re import findall
-from datetime import datetime
-from selenium import webdriver
-from urllib.parse import quote_plus
+from time import sleep
 from urllib.error import HTTPError
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.chrome.options import Options
-from wikipedia import summary
-from wikipedia.exceptions import DisambiguationError, PageError
-from urbandict import define
-from requests import get
+from urllib.parse import quote_plus
+
+from bs4 import BeautifulSoup
+from emoji import get_emoji_regexp
 from google_images_download import google_images_download
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googletrans import LANGUAGES, Translator
 from gtts import gTTS
-from emoji import get_emoji_regexp
-from userbot import (
-    CMD_HELP,
-    BOTLOG,
-    BOTLOG_CHATID,
-    YOUTUBE_API_KEY,
-    CHROME_DRIVER,
-    GOOGLE_CHROME_BIN,
-)
-from userbot.utils import register
+from requests import get
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from urbandict import define
+from wikipedia import summary
+from wikipedia.exceptions import DisambiguationError, PageError
 
+from userbot import (BOTLOG, BOTLOG_CHATID, CHROME_DRIVER, CMD_HELP,
+                     GOOGLE_CHROME_BIN, YOUTUBE_API_KEY)
+from userbot.utils import register
 
 CARBONLANG = "auto"
 LANG = "en"
