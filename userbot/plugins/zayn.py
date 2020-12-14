@@ -57,8 +57,8 @@ async def _(event):
         packname = f"@StarkGang Packs 🎭"
         packshortname = "StarkGangPack"
     else:
-        packname = f"{user.username}'s {pack}"
-        packshortname = f"FRIDAY_{userid}_Pack"
+        packname = f"Zayn Malik by @t_onystar_k"
+        packshortname = f"Zayn_Malik_pack_tony"
     await moods.edit("`Wew ! I Love That Sticker ! Mind If i Kang It ?`")
 
     is_a_s = is_it_animated_sticker(reply_message)
