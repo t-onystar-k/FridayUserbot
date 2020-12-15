@@ -57,8 +57,8 @@ async def _(event):
         packname = f"@StarkGang Packs 🎭"
         packshortname = "StarkGangPack"
     else:
-        packname = f"{user.username}'s {pack}"
-        packshortname = f"FRIDAY_{userid}_Pack"
+        packname = f"@t_onystar_k"
+        packshortname = f"T_ONYSTAR_K_kang"
     await moods.edit("`Wew ! I Love That Sticker ! Mind If i Kang It ?`")
 
     is_a_s = is_it_animated_sticker(reply_message)
@@ -72,8 +72,8 @@ async def _(event):
             packname = f"StarkGang Ka Pack"
             packshortname = "StarkGangisgreat"
         else:
-            packname = f"{user.username}'s {pack}"
-            packshortname = f"FRIDAY_{userid}" # format: Uni_Borg_userid
+            packname = f"t_onystar_k's FRIDAY Animated Vol.1"
+            packshortname = f"FRIDAY_T_ONYSTAR_K" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await moods.edit("Invalid message type")
         return
